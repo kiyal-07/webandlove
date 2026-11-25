@@ -78,11 +78,7 @@ h1::after {
   color: var(--blanc);
   text-decoration: none;
 }
-#calPersonnel:hover {
-  transform: translateY(-6px);
-  background: var(--vert);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
+
 /* les boutons de thème */
 /* BOUTONS DES THÈMES */
 
@@ -96,11 +92,6 @@ button[data-theme] {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
-}
-
-button[data-theme]:hover {
-  background: var(--bordeaux);
-  color: white;
 }
 
 button[data-theme].active {
@@ -137,12 +128,6 @@ button[data-theme].active {
   box-shadow: 0 4px 8px rgba(84, 35, 43, 0.15);
 }
 
-.caseJour:hover {
-  transform: translateY(-6px);
-  background: var(--vert);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
-
 /* CASES VERROUILLÉES */
 
 .verrouillage {
@@ -151,11 +136,6 @@ button[data-theme].active {
   border-color: #c9bda9;
   cursor: not-allowed;
   box-shadow: none;
-}
-
-.verrouillage:hover {
-  transform: none;
-  background: #e5ddd3;
 }
 
 /* FENÊTRE DES MESSAGES */
@@ -273,11 +253,6 @@ button[data-theme].active {
   transition: 0.3s;
 }
 
-#fermer:hover {
-  background: var(--vert);
-  transform: scale(1.05);
-}
-
 /* ANIMATION */
 /* Animation AMOUR */
 .mode-amour .box {
@@ -345,6 +320,30 @@ button[data-theme].active {
 }
 
 /* RESPONSIVE */
+@media (hover: hover) {
+  #calPersonnel:hover {
+    transform: translateY(-6px);
+    background: var(--vert);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  button[data-theme]:hover {
+    background: var(--bordeaux);
+    color: white;
+  }
+  .caseJour:hover {
+    transform: translateY(-6px);
+    background: var(--vert);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  .verrouillage:hover {
+    transform: none;
+    background: #e5ddd3;
+  }
+  #fermer:hover {
+    background: var(--vert);
+    transform: scale(1.05);
+  }
+}
 
 @media (max-width: 600px) {
   body {
