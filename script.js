@@ -40,7 +40,7 @@ boutonsTheme.forEach(function (bouton) {
 
 const calendrier = document.getElementById("calendrier");
 const messageFinal = document.getElementById("messageFinal");
-const maintenant = new Date(2027,0,2);
+const maintenant = new Date();
 const noel = new Date(annee, 11, 25);
 const afterNoel = new Date(annee + 1, 0, 1);
 
