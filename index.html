@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WEB&LOVE</title>
+  </head>
+  <body>
+    <h1>WEB&LOVE</h1>
+    <p>
+      24 jours pour rappeler à quelqu'un qu'il compte.<br />
+      « Parce que les plus beaux cadeaux ne s'emballent pas toujours. »
+    </p>
+
+    <p id="compte-a-rebours"></p>
+    <div id="calPersonnel">
+      <a href="form.html" target="_blank" rel="noopener noreferrer"
+        >✦ offrez un calendrier personnalisé ✦</a
+      >
+    </div>
+    <button data-theme="amour" class="active">Amour</button>
+    <button data-theme="anime">Anime</button>
+    <button data-theme="minuit">Minuit 24</button>
+    <div id="calendrier"></div>
+    <div
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Message du calendrier"
+    >
+      <div class="box">
+        <p id="texte-message"></p>
+        <button id="fermer">Fermer</button>
+      </div>
+    </div>
+    <p id="messageFinal"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
